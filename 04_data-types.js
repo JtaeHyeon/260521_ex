@@ -38,3 +38,16 @@ console.log(typeof u3.u);
 //object
 let o = {}; // 주소가 저장되는 타입
 console.log(typeof o);
+
+//템플릿 리터럴
+const nn = "김자바";
+console.log(nn + "는 개발자 이다");
+console.log("대한민국에 사는 " + nn + "는 개발자 이다");
+console.log(`${nn}는 개발자 이다`); //변수를 직접(문자열 연결 없이) 넣을 수 있다.
+console.log(`
+    시작
+    
+    엔터가 있으면
+    그대로 읽음
+(들여쓰기도 ㅎ)
+    끝`); // ``은 엔터를 그대로 인식한다

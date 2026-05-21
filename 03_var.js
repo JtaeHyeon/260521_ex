@@ -16,3 +16,16 @@ console.log(bar);
 //foo = 100 가능. 하지만 let foo는 불가 (Cannot redeclare block-scoped variable)
 
 let baz; // 선언은 안하고 할당만 하면 에러남.(undefined)
+
+// const a; // const는 선언과 할당을 동시에 해야함
+const a = 111;
+console.log(a);
+// const a = 123; //재선언, 재할당 안됨
+//변수는 재할당을 받을 수 있기 때문에 메모리상 가변적인 위치를 받음
+// 상수는 재할당이 안되기 때문에 메모리상 고정적인 길이. -> 약간의 최적화 기능도 한다
+// mutable, immutable...
+
+// var
+// v = 1000;
+// var v = 100;
+// var v;

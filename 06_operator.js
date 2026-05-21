@@ -46,3 +46,32 @@ console.log(1 == "1"); //true
 //일치 연산자(형 변환을 하지 않는다 - 그대로 둔다)
 console.log(1 === "1"); //false
 console.log(1 !== "1"); //true
+
+//truthy, falsy
+console.log(0 == "0"); //true
+console.log("" == 0); //true
+console.log("" == "0"); //false
+
+//논리연산자
+//1개 이상의 값에 대해서 논리적 평가 갑(true, false)을 합성, 변환하는 연산자
+// &&(and), ||(or), !(not)
+console.log("-----------");
+const b1 = 100 > 10;
+console.log(b1);
+console.log(!b1);
+const b2 = 50 < 20;
+console.log(b2);
+// 모든 조건 만족 시 true -> &&(and)
+console.log(b1 && b2);
+// 조건 중 하나라도 true면 true -> ||(or)
+console.log(b1 || b2);
+
+// &&, || -> 단축연산 함.
+// || : 처음 조건이 true -> 두번째꺼 안봄(어차피 true)
+// && : 처음 조건이 false -> 두번째꺼 안봄(어차피 false)
+//(증감 연산자로 증명할 것)
+
+
+//삼항연산자
+//조건 ? 조건이 참일 때 반환할 값 : 조건이 거짓일 때 반환할 값
+console.log(b1 ? b1 : b2);
